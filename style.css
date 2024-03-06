@@ -1,0 +1,393 @@
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    will-change: transform, opacity;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/gradient-7258997_1920.webp');
+    background-size: cover;
+    /* Cobrir completamente o fundo */
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.178);
+}
+
+
+#login h1 {
+
+    font-size: 38px;
+}
+
+#register h1 {
+
+    font-size: 38px;
+
+
+
+}
+
+
+
+
+input {
+
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 10px;
+    border: none;
+    color: rgb(83, 81, 81);
+    /* box-shadow: 0px 0px 60px rgba(0, 0, 255, 0.63); */
+    width: 60%;
+    font-weight: bold;
+    transition: all 0.3s linear;
+
+}
+
+
+
+
+.container.login {
+    background-color: rgba(187, 187, 187, 0);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 950px rgba(0, 0, 255, 0.555); 
+    /* border: 1px solid red; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 65%;
+    /* overflow:scroll;
+    overflow-x: hidden; */
+    width: 30%;
+    margin: auto;
+    margin-top: 8%;
+    display: flex;
+    border-radius: 20px;
+    transition:all 0.3s linear;
+}
+
+
+.container.register {
+
+    box-shadow: 0px 0px 950px rgba(219, 230, 126, 0.555); 
+    background-color: rgba(187, 187, 187, 0);
+    backdrop-filter: blur(20px);
+    /* border: 1px solid red; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 65%;
+    width: 30%;
+    margin: auto;
+    margin-top: 8%;
+    display: flex;
+    border-radius: 20px;
+    transition:all 0.3s linear;
+    
+}
+
+.inputs_login {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 99.8%;
+    height: 55%;
+    transition: all 0.3s linear;
+
+}
+
+.inputs_login input {
+
+    margin: 3% 0;
+    padding: 10px;
+
+}
+
+.login {
+
+    /* border: 1px solid blue; */
+    height: 100%;
+
+}
+
+.ativo {
+    width: 99%;
+    transition: all 0.3s linear;
+    
+}
+.desativado {
+    width: 0%;
+    filter: blur(10px);
+    transition: all 0.3s linear;
+    opacity: 0;
+    
+ 
+
+}
+
+/* REGISTRO */
+
+
+.inputs_registro {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    height: 60%;
+    transition: all 0.3s linear;
+}
+
+.inputs_registro input {
+
+    margin: 30px 0;
+    padding: 10px;
+}
+
+.registro {
+
+    /* border: 1px solid blue; */
+    height: 100%;
+
+}
+
+
+
+
+.buttons {
+    margin: auto;
+    /* margin-top: 0%; */
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: all 0.3s linear;
+
+}
+
+.buttons button {
+    transition: all 0.2s linear;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.507);
+    color: rgba(83, 81, 81, 0.829);
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+   
+    color: white;
+    background-color: rgba(188, 126, 187, 255);
+    
+}
+
+
+/* .alert {
+    margin-bottom: 7%;
+    border-radius: 15px;
+    text-align: center;
+width: 80%;
+background-color: rgba(255, 255, 255, 0.76);
+color: yellow;
+text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
+
+} */
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 640px) {
+
+body{
+
+background-image: url('./assets/comprimido.webp');
+
+}
+
+
+    .buttons button {
+
+        font-size: 80%;
+
+    }
+
+}
+
+/* @media screen and (max-width: 470px) {
+
+    .buttons button {
+
+        font-size: 60%;
+
+    }
+
+
+ 
+
+
+} */
+
+@media screen and (max-width: 768px) {
+    button:hover {
+   
+        background-color: rgba(255, 255, 255, 0.507);
+        color: rgba(83, 81, 81, 0.829);
+        
+    }
+    .container.login {
+        backdrop-filter: blur(0px);
+        background-color: rgba(255, 255, 255, 0.082);
+        box-shadow: none; 
+
+        height: 75%;
+
+        width: 90%;
+
+        margin-top: 16%;
+
+        /* transition: all 0.3s linear; */
+        
+    }
+
+    .container.register {
+        backdrop-filter: blur(0px);
+        background-color: rgba(255, 255, 255, 0.082);
+        box-shadow: none; 
+        height: 75%;
+
+        width: 90%;
+
+        margin-top: 16%;
+
+        /* transition: all 0.3s linear; */
+        
+    }
+    #container {
+
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.212);
+        
+            }
+
+    .inputs_registro input {
+
+        margin: 10px 0;
+        padding: 10px;
+        /* transition: all 0.3s linear; */
+    }
+
+
+
+}
+
+
+
+@media screen and (max-height: 890px) {
+
+    
+    .inputs_login {
+        /* border: 1px solid green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        width: 99.8%;
+        height: 50%;
+        /* transition: all 0.3s linear; */
+    }
+
+    .inputs_registro {
+        /* border: 1px solid green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        width: 99.8%;
+        height: 50%;
+        /* transition: all 0.3s linear; */
+    }
+
+
+
+
+}
+
+@media screen and (max-height: 710px) {
+
+
+    .inputs_login {
+        /* border: 1px solid green; */
+
+        margin-top: 5%;
+        height: 40%;
+        /* transition: all 0.3s linear; */
+
+    }
+
+    .inputs_registro {
+        /* border: 1px solid green; */
+
+        margin-top: 5%;
+        height: 40%;
+        /* transition: all 0.3s linear; */
+
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-height: 600px) {
+
+
+    #login h1 {
+
+        font-size: 32px;
+        /* transition: all 0.3s linear; */
+
+    }
+
+    #register h1 {
+
+        font-size: 32px;
+        /* transition: all 0.7s linear; */
+
+    }
+
+
+
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="./assets/icon.ico">
+
+</head>
+
+
+<body>
+
+
+
+    <div id="container" class="container login">
+        <section id="login" class="login ativo">
+            <h1>Login</h1>
+            <section class="inputs_login">
+                <form action="" method="post">
+                    <input id="emailLogin" placeholder="Email" type="email" class="email">
+                    <input id="senhaLogin" placeholder="Senha" type="password" class="password">
+                </form>
+            </section>
+            <section class="buttons">
+                <button id="btn_login" class="submit_login" onclick="logar()">Logar</button>
+
+                <button id="btn_login" class="submit_login" onclick="ativar()">Cadastrar</button>
+
+            </section>
+        </section>
+        <section id="register" class="registro desativado">
+            <h1>Registro</h1>
+            <section class="inputs_registro">
+                <form action="" method="post">
+                    <input id="emailRegistro" placeholder="Email" type="email" class="email">
+                    <input id="senhaRegistro" placeholder="Senha" type="password" class="password">
+                    <input id="senhaRegistro2" placeholder="Repita a senha" type="password" class="password">
+                </form>
+            </section>
+            <section class="buttons">
+                <button type="submit" id="btn_login" class="submit_registro" onclick="registrar()">Cadastrar</button>
+                <button id="btn_registro" class="submit_registro" onclick="ativar()">Voltar para login</button>
+
+            </section>
+
+        </section>
+    </div>
+
+
+
+    
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+    <script src="script.js"></script>
+    <script>import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';</script>
+</body>
+
+</html>
